@@ -55,6 +55,9 @@ p {
   position: relative;
   width: 200px;
 }
+.card:hover {
+  box-shadow: 0px 5px 34px -8px rgba(0,0,0,0.75);
+}
 .figure__container {
   position: absolute;
   top: 32px;
