@@ -1,0 +1,82 @@
+.figure {
+  display: inline-block;
+}
+.square {
+  background-color: #ACB6CD;
+  height: 100px;
+  width: 100px;
+}
+.rectangle {
+  background-color: #ed6b3f;
+  height: 70px;
+  width: 120px;
+  margin-top: 15px;
+}
+
+.diamond {
+	width: 0;
+	height: 0;
+	border: 45px solid transparent;
+	border-bottom: 50px solid #3d0d2c;
+	position: relative;
+	top: -45px;
+}
+.diamond:after {
+	content: '';
+	position: absolute;
+	left: -45px;
+  top: 50px;
+	width: 0;
+	height: 0;
+	border: 45px solid transparent;
+	border-top: 50px solid #3d0d2c;
+}
+.parallelogram {
+  background-color: #2ba3e6;
+  margin-top: 15px;
+  width: 120px;
+	height: 70px;
+	-webkit-transform: skew(20deg);
+	   -moz-transform: skew(20deg);
+	     -o-transform: skew(20deg);
+}
+.trapezoid {
+  margin-top: 15px;
+  border-bottom: 70px solid #E7B544;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	height: 0;
+	width: 100px;
+}
+.triangle {
+  width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid #3867a4;
+}
+.polygon {
+    margin-top: 36px;
+    position: relative;
+    width: 90px;
+    border-width: 50px 18px 0;
+    border-style: solid;
+    border-color: #4d997c transparent;
+}
+.polygon:before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -85px;
+    left: -18px;
+    border-width: 0 45px 35px;
+    border-style: solid;
+    border-color: transparent transparent #4d997c;
+}
+.circle {
+  background-color: #CF4455;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}
